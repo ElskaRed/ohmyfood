@@ -4,14 +4,13 @@ $light-blue: #89c8fa;
 $dark-blue: #c5e2f8;
 $purple: #d5f0f8;
 $gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-$gradient-button: linear-gradient(#FF79DA -20%, #9356DC);
 $button-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 
 @mixin button($width) {
     color: white;
     border-radius: 25px;
-    background: $gradient-button;
+    background: linear-gradient(#FF79DA -20%, #9356DC);
     border: none;
     padding: 15px;
     width: $width;
@@ -31,3 +30,7 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 
+@mixin font($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
