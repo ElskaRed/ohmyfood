@@ -1,5 +1,153 @@
+@import "var.scss";
+@import "queries.scss";
+
 * {
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+        height: 30px;
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+}
+
+.localisation {
+    background: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    gap: 17px;
+    position: relative;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__icone {
+        height: 16px;
+    }
+
+    &__paragraphe{
+        font-weight: 500;
+    }
+}
+
+.accueil {
+    @include flexbox(column);
+    align-items: center;
+    background: #F7F7F7;
+    gap: 20px;
+
+    &__titre, &__sous-titre {
+        text-align: center;
+    }
+
+    &__titre {
+        @include font('roboto', 2em, 700);
+        margin-top: 40px;
+    }
+
+    &__sous-titre {
+        @include font('roboto', 1.1em, 300);
+    }
+
+    &__bouton {
+        @include button(218px);
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+}
+
+h2 {
+    @include font('roboto', 2em, 700);
+    padding-bottom: 30px;
+}
+
+.fonctionnement {
+    padding: 50px 20px;
+
+    &__cartes {
+        @include flexbox(column);
+        gap: 20px;
+
+        &__article {
+            @include cards;
+            font-weight: 500;
+        }
+    }
+}
+
+.fonctionnement__contenu {
+    p {
+        font-weight: 500;
+    }
+}
+
+.numero {
+    @include numero;
+}
+
+.restaurants {
+    background: #F7F7F7;
+    padding: 50px 20px;
+
+    &__cartes {
+        @include flexbox(column);
+        gap: 20px;
+    }
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: $card-shadow;
+    background-color: white;
+    height: 250px;
+
+    img {
+        height: 70%;
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    &__content {
+        @include flexbox(row);
+        justify-content: space-between;
+        height: 30%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 8px;
+
+        &__text {
+            @include flexbox(column);
+            justify-content: center;
+            gap: 5px;
+
+            p {
+                @include font('roboto', 1.1em, 300);
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    @include font('roboto', 1.2em, 700);
 }

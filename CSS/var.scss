@@ -1,8 +1,8 @@
 $light-green: #99e2d0;
-$green: #eafbff;
+$green: #008766;
 $light-blue: #89c8fa;
-$dark-blue: #c5e2f8;
-$purple: #d5f0f8;
+$dark-blue: #003A68;
+$purple: #9356DC;
 $gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 $button-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -21,16 +21,32 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     margin-right: auto;
 }
 
-@mixin card {
+@mixin cards {
     width: 100%;
     box-shadow: $card-shadow;
     background-color: white;
-    display: flex;
-    flex-direction: column;
     border-radius: 15px;
 }
 
-@mixin font($size, $weight) {
+@mixin font($family, $size, $weight) {
+    font-family: $family;
     font-size: $size;
     font-weight: $weight;
+}
+
+@mixin flexbox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin numero {
+    border-radius: 25px;
+    background: $purple;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    width: 24px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 0.9em;
 }
