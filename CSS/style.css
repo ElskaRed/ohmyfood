@@ -50,7 +50,7 @@
 }
 .accueil__titre {
   font-family: "roboto";
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   margin-top: 40px;
 }
@@ -75,9 +75,9 @@
   margin-bottom: 60px;
 }
 
-h2 {
+.index-h2 {
   font-family: "roboto";
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   padding-bottom: 30px;
 }
@@ -178,7 +178,7 @@ footer {
 footer .footer__logo {
   font-family: "shrikhand";
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 400;
   padding-bottom: 15px;
 }
 footer ul {
