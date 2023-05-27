@@ -58,10 +58,6 @@
     @include font('roboto', 1em, 300);
 }
 
-.menu-card-text {
-
-}
-
 .menu {
     @include flexbox(column);
     gap: 12px;
