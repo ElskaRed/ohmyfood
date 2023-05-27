@@ -1,0 +1,22 @@
+@import "var.scss";
+@import "queries.scss";
+
+h3 {
+    @include font('roboto', 1.2em, 700);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+
+    .logo {
+        height: 30px;
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+}
+
+.couverture {
+    object-fit: cover;
+    height: 275px;
+}

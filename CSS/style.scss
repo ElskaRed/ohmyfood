@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-header {
+.header-index {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); 
     display: flex;
     justify-content: center;
@@ -150,4 +150,25 @@ a {
 
 h3 {
     @include font('roboto', 1.2em, 700);
+}
+
+footer {
+    background: #353535;
+    color: white;
+    padding: 25px;
+
+    .footer__logo {
+        @include font('shrikhand', 1.2em, 700);
+        padding-bottom: 15px;
+    }
+
+    ul {
+        @include flexbox(column);
+        gap: 7px;
+        list-style: none;
+    }
+}
+
+.footer-icone {
+    padding-right: 11px;
 }

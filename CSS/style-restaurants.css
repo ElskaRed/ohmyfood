@@ -1,0 +1,21 @@
+h3 {
+  font-family: "roboto";
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+}
+.header-menu .logo {
+  height: 30px;
+  margin-top: 23px;
+  margin-bottom: 12px;
+}
+
+.couverture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 275px;
+}/*# sourceMappingURL=style-restaurants.css.map */
