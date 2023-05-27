@@ -41,6 +41,7 @@
     &__top {
         @include flexbox(row);
         justify-content: space-between;
+        padding-right: 20px;
 
         &__titre {
             @include font('shrikhand', 1.8em, 400);
@@ -48,7 +49,13 @@
     }
 
     &__button {
-        @include button(186px);
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__commander {
+           @include button(186px); 
+        }
     }
 }
 
@@ -56,11 +63,13 @@
 
 .menu-h2 {
     @include font('roboto', 1em, 300);
+    padding-top: 40px;
 }
 
 .menu {
     @include flexbox(column);
     gap: 12px;
+    padding-top: 15px;
 
     &__cartes {
         @include cards;
