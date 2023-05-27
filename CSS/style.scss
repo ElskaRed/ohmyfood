@@ -153,6 +153,7 @@
     &__content {
         @include flexbox(row);
         justify-content: space-between;
+        align-items: center;
         height: 30%;
         padding-left: 15px;
         padding-right: 15px;
@@ -164,6 +165,17 @@
             gap: 5px;
         }
     }
+}
+
+.like {
+    background-image: url(../images/coeur-vide.png);
+    background-color: transparent;
+    width: 23px;
+    height: 22px;
+    border: none;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+
 }
 
 .nouveau {

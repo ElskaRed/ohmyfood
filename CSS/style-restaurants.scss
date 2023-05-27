@@ -42,6 +42,7 @@
         @include flexbox(row);
         justify-content: space-between;
         padding-right: 20px;
+        align-items: center;
 
         &__titre {
             @include font('shrikhand', 1.8em, 400);
