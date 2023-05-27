@@ -83,7 +83,7 @@
 }
 
 .fonctionnement {
-  padding: 50px 20px;
+  padding: 50px 20px 50px 32px;
 }
 .fonctionnement__cartes {
   display: flex;
@@ -96,22 +96,28 @@
   background-color: white;
   border-radius: 15px;
   font-weight: 500;
+  height: 72px;
+  position: relative;
 }
 
-.fonctionnement__contenu p {
-  font-weight: 500;
+.fonctionnement__numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: -12px;
+  top: 30%;
 }
-
-.numero {
-  border-radius: 25px;
+.fonctionnement__numero__cercle {
+  border-radius: 50%;
   background: #9356DC;
   color: white;
-  text-align: center;
-  vertical-align: center;
   width: 24px;
   height: 24px;
   font-weight: 500;
   font-size: 0.9em;
+  line-height: 24px;
 }
 
 .restaurants {

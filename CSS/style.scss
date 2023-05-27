@@ -76,7 +76,7 @@
 }
 
 .fonctionnement {
-    padding: 50px 20px;
+    padding: 50px 20px 50px 32px;
 
     &__cartes {
         @include flexbox(column);
@@ -85,18 +85,24 @@
         &__article {
             @include cards;
             font-weight: 500;
+            height: 72px;
+            position: relative;
         }
     }
 }
 
-.fonctionnement__contenu {
-    p {
-        font-weight: 500;
-    }
-}
+.fonctionnement__numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position : absolute;
+    left: -12px;
+    top: 30%;
 
-.numero {
-    @include numero;
+    &__cercle {
+        @include numero;
+    }
 }
 
 .restaurants {
