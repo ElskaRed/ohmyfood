@@ -72,6 +72,14 @@
   padding-top: 40px;
 }
 
+.line {
+  display: block;
+  margin-top: 6px;
+  height: 3px;
+  width: 40px;
+  background: #99e2d0;
+}
+
 .menu {
   display: flex;
   flex-direction: column;

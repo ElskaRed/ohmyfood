@@ -1,5 +1,4 @@
 @import "var.scss";
-@import "queries.scss";
 
 .header-menu {
     position: relative;
@@ -65,6 +64,14 @@
 .menu-h2 {
     @include font('roboto', 1em, 300);
     padding-top: 40px;
+}
+
+.line {
+    display: block;
+    margin-top: 6px;
+    height: 3px;
+    width: 40px;
+    background: $light-green;
 }
 
 .menu {
