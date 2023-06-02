@@ -22,12 +22,17 @@
     .restaurants__cartes {
        @include flexbox(row);
        flex-wrap: wrap;
-       justify-content: center;
-       gap: 30px;
+       justify-content: space-between;
     }
 
     .card {
-        width: 45vw;
         height: 174px;
+        width: 46vw;
+    }
+}
+
+@media (min-width: 1060px) {
+    .card {
+        width: 498px;
     }
 }
