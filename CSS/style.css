@@ -229,13 +229,20 @@ footer .footer__logo {
   font-family: "shrikhand";
   font-size: 1.2em;
   font-weight: 400;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
 }
 footer ul {
   display: flex;
   flex-direction: column;
   gap: 7px;
   list-style: none;
+  padding-top: 7px;
+}
+footer .liste1 {
+  font-weight: 500;
+}
+footer .liste2 {
+  font-weight: 400;
 }
 
 .footer-icone {

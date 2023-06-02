@@ -31,8 +31,40 @@
     }
 }
 
+@media (min-width: 885px) {
+    footer {
+        height: 114px;
+        @include flexbox(row-reverse);
+        align-items: flex-end;
+
+        .footer__logo {
+            padding-left: 90px;
+            padding-right: 45px;
+            padding-bottom: 0px;
+        }
+
+        ul {
+            @include flexbox(row);
+        }
+
+        .liste1 {
+            order: 2;
+            display: flex;
+            gap: 12px;
+        }
+
+        .liste2 {
+            order: 1;
+            display: flex;
+            gap: 12px;
+            padding-left: 50px;
+        }
+    }
+}
+
 @media (min-width: 1060px) {
     .card {
         width: 498px;
+        margin-bottom: 30px;
     }
 }

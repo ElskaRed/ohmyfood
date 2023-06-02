@@ -213,13 +213,22 @@ footer {
 
     .footer__logo {
         @include font('shrikhand', 1.2em, 400);
-        padding-bottom: 15px;
+        padding-bottom: 7px;
     }
 
     ul {
         @include flexbox(column);
         gap: 7px;
         list-style: none;
+        padding-top: 7px;
+    }
+
+    .liste1 {
+        font-weight: 500;
+    }
+
+    .liste2 {
+        font-weight: 400;
     }
 }
 
