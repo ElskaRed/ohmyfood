@@ -53,6 +53,8 @@
   font-size: 1.8em;
   font-weight: 700;
   margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .accueil__sous-titre {
   font-family: "roboto";
@@ -85,15 +87,17 @@
 }
 
 .fonctionnement {
-  padding: 50px 20px 50px 32px;
+  padding: 50px 20px;
 }
 .fonctionnement__cartes {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-left: 12px;
 }
 .fonctionnement__cartes__article {
   position: relative;
+  width: 100%;
 }
 
 .contenu {
@@ -102,7 +106,6 @@
   align-items: center;
   gap: 20px;
   padding-left: 35px;
-  width: 100%;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 15px;
