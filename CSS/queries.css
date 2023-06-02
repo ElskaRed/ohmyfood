@@ -23,6 +23,9 @@
     height: 174px;
     width: 46vw;
   }
+  .couverture {
+    height: 500px;
+  }
 }
 @media (min-width: 885px) {
   footer {
