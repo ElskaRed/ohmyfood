@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/queries.css">
-    <link rel="stylesheet" href="/CSS/style-restaurants.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style-restaurants.css">
+    <link rel="stylesheet" href="../CSS/queries.css">
 </head>
 <body>
     <header class="header-menu">
@@ -24,7 +24,7 @@
                 <h1 class="partie-menu__top__titre">À la française</h1>
                 <button class="like"></button>
             </div>
-            <section>
+            <section class="partie-menu__section">
                 <h2 class="menu-h2">ENTRÉES</h2>
                 <div class="line"></div>
                 <div class="menu">
@@ -51,7 +51,7 @@
                     </article>
                 </div>
             </section>
-            <section>
+            <section class="partie-menu__section">
                 <h2 class="menu-h2">PLATS</h2>
                 <div class="line"></div>
                 <div class="menu">
@@ -78,7 +78,7 @@
                     </article>
                 </div>
             </section>
-            <section>
+            <section class="partie-menu__section">
                 <h2 class="menu-h2">DESSERTS</h2>
                 <div class="line"></div>
                 <div class="menu">
@@ -112,11 +112,13 @@
     </main>
     <footer>
         <p class="footer__logo">ohmyfood</p>
-        <ul>
+        <ul class="liste1">
             <li><img src="../images/couverts.png" class="footer-icone" alt="icone couverts">Proposer un restaurant</li>
             <li><img src="../images/mains.png" class="footer-icone" alt="icone poignée de mains">Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+        </ul>    
+        <ul class="liste2">
+            <li class="sans-icone">Mentions légales</li>
+            <li class="sans-icone">Contact</li>
         </ul>
     </footer>
 </body>

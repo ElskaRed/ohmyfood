@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accueil__titre {
     font-size: 2.5em;
   }
@@ -20,23 +20,41 @@
     justify-content: space-between;
   }
   .card {
-    height: 174px;
+    height: 251px;
     width: 46vw;
   }
+  .header-menu, .header-index {
+    height: 96px;
+  }
   .couverture {
-    height: 500px;
+    height: 390px;
+  }
+  .partie-menu {
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .partie-menu__top {
+    justify-content: center;
+    gap: 25px;
+  }
+  .partie-menu__section {
+    max-width: 634px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-@media (min-width: 885px) {
+@media only screen and (min-width: 885px) {
   footer {
     height: 114px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    gap: 40px;
   }
   footer .footer__logo {
-    padding-left: 90px;
-    padding-right: 45px;
+    padding-left: 50px;
+    padding-right: 40px;
     padding-bottom: 0px;
   }
   footer ul {
@@ -52,10 +70,9 @@
     order: 1;
     display: flex;
     gap: 12px;
-    padding-left: 50px;
   }
 }
-@media (min-width: 1060px) {
+@media only screen and (min-width: 1060px) {
   .card {
     width: 498px;
     margin-bottom: 30px;
