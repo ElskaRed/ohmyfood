@@ -124,6 +124,22 @@
         gap: 5px;
         height: 70px;
         padding: 15px;
+        position: relative;
+        overflow: visible;
+
+        &::after {
+            content: url(../images/check.png);
+            background-color: $light-green;
+            object-fit: none;
+            background-repeat: no-repeat;
+            height: 70px;
+            position: absolute;
+            right: -60px;
+            width: 59px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         &__h3 {
             @include font('roboto', 1.1em, 500);
