@@ -100,6 +100,7 @@ body {
   z-index: -1;
   background: linear-gradient(#ff98e2, #a36fe1);
   transition: opacity 500ms;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .index-h2 {
