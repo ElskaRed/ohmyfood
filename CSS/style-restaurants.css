@@ -144,7 +144,10 @@
   height: 70px;
   padding: 15px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
+}
+.menu__cartes:hover::after {
+  transform: translateX(-59px);
 }
 .menu__cartes::after {
   content: url(../images/check.png);
@@ -159,6 +162,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 400ms ease;
 }
 .menu__cartes__h3 {
   font-family: "roboto";
