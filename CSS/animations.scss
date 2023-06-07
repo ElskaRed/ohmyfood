@@ -1,2 +1,6 @@
 @import "var.scss";
 
+@mixin button-hover {
+    background: lighten($button-gradient, 15%);
+    
+}
