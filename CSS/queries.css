@@ -19,9 +19,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .restaurants__cards__package {
+    width: calc(50% - 10px);
+    max-width: 490px;
+  }
   .card {
     height: 251px;
-    width: 45vw;
   }
   .header-menu, .header-index {
     height: 96px;
@@ -70,11 +73,5 @@
     order: 1;
     display: flex;
     gap: 12px;
-  }
-}
-@media only screen and (min-width: 1060px) {
-  .card {
-    width: 498px;
-    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=queries.css.map */
