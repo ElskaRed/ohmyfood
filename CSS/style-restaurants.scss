@@ -29,35 +29,48 @@
 
 .partie-menu {
     background: #F7F7F7;
-    padding-left: 13px;
-    padding-right: 13px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     margin-top: -45px;
     position : relative;
     z-index: 2;
     padding-top: 40px;
+    width: 100%;
 
     &__top {
         @include flexbox(row);
         justify-content: space-between;
         padding-right: 20px;
+        padding-left: 13px;
         align-items: center;
 
         &__titre {
             @include font('shrikhand', 1.8em, 400);
         }
-    }
 
-    &__button {
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        &__commander {
-           @include button(186px); 
+        &__like {
+            @include like;
         }
     }
+
+    &__section {
+        margin-right: 13px;
+        margin-left: 13px;
+    }
+
+    &__end {
+        text-align: center;
+
+        &__btn {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            @include button(186px); 
+        }
+    }
+
 }
 
    
