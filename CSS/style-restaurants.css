@@ -149,6 +149,9 @@
 .menu__cartes:hover::after {
   transform: translateX(-59px);
 }
+.menu__cartes:hover .prix {
+  transform: translateX(-59px);
+}
 .menu__cartes::after {
   content: url(../images/check.png);
   background-color: #99e2d0;
@@ -179,6 +182,7 @@
   font-family: "roboto";
   font-size: 0.9em;
   font-weight: 700;
+  transition: transform 400ms ease;
 }
 
 .menu-card-text {

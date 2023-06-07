@@ -131,6 +131,10 @@
             transform: translateX(-59px);
         }
 
+        &:hover .prix {
+            transform: translateX(-59px);
+        }
+
         &::after {
             content: url(../images/check.png);
             background-color: $light-green;
@@ -159,6 +163,7 @@
 
 .prix {
     @include font('roboto', 0.9em, 700);
+    transition: transform 400ms ease;
 }
 
 .menu-card-text {
