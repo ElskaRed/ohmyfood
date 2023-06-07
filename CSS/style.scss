@@ -197,8 +197,20 @@ body {
     right: 5%;
     z-index: 1;
 
-    &__button {
+    &__btn {
         @include like;
+        position: relative;
+
+        &::after {
+            content: "";
+            @include like-hover;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
     }
 }
 
