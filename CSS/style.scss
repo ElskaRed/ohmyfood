@@ -175,14 +175,15 @@ body {
 
     &__content {
         @include flexbox(column);
-        justify-content: center;
+        justify-content: space-around;
         height: 30%;
         padding-left: 15px;
         padding-right: 15px;
-        padding-bottom: 8px;
+        padding-bottom: 17px;
+        padding-top: 10px;
 
         &__title {
-            @include font('roboto', 1.1em, 700);
+            @include font('roboto', 1.2em, 700);
         }
 
         &__text {
