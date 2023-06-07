@@ -71,10 +71,24 @@ body {
         padding-right: 25px;
     }
 
-    &__bouton {
+    &__btn {
         @include button(218px);
         margin-top: 15px;
         margin-bottom: 60px;
+        position: relative;
+        z-index: 1;
+        
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+           content: "";
+           @include button-hover;
+           transition: opacity 500ms;
+        }
     }
 }
 
