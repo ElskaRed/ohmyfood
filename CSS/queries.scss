@@ -19,7 +19,7 @@
         margin-right: auto;
     }
  
-    .restaurants__cartes {
+    .restaurants__cards {
        @include flexbox(row);
        flex-wrap: wrap;
        justify-content: space-between;

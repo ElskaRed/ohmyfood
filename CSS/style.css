@@ -147,12 +147,12 @@ body {
   background: #F7F7F7;
   padding: 50px 20px;
 }
-.restaurants__cartes {
+.restaurants__cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.restaurants__cartes__nouveau {
+.restaurants__cards__package {
   position: relative;
 }
 
@@ -172,22 +172,31 @@ body {
 }
 .card__content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   height: 30%;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 8px;
 }
+.card__content__title {
+  font-family: "roboto";
+  font-size: 1.1em;
+  font-weight: 700;
+}
 .card__content__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
+  font-family: "roboto";
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 .like {
+  position: absolute;
+  bottom: 55px;
+  right: 15px;
+  z-index: 1;
+}
+.like__button {
   background-image: url(../images/coeur-vide.png);
   background-color: transparent;
   width: 23px;
@@ -206,18 +215,6 @@ body {
   position: absolute;
   right: 4%;
   top: 5%;
-}
-
-.index-h3 {
-  font-family: "roboto";
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
-.index-card-text {
-  font-family: "roboto";
-  font-size: 1.1em;
-  font-weight: 300;
 }
 
 a {

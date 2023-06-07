@@ -13,7 +13,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .restaurants__cartes {
+  .restaurants__cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
