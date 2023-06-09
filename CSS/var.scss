@@ -21,16 +21,6 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     box-shadow: $button-shadow;
 }
 
-@mixin like {
-    background-image: url(../images/coeur-vide.png);
-    background-color: transparent;
-    width: 23px;
-    height: 22px;
-    border: none;
-    margin-right: 5px;
-    background-repeat: no-repeat;
-}
-
 @mixin like-hover {
     position: absolute;
     top: 0;

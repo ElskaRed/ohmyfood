@@ -199,19 +199,8 @@ body {
     z-index: 1;
 
     &__btn {
-        @include like;
-        position: relative;
-
-        &::after {
-            content: "";
-            @include like-hover;
-        }
-
-        &:hover {
-            &::after {
-                opacity: 1;
-            }
-        }
+        border: none;
+        background-color: transparent;
     }
 }
 
