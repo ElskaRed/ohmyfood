@@ -7,11 +7,10 @@
     justify-content: center;
     align-items: center;
 
-    &__retour {
-        height: 16px;
+   &__retour {
         position: absolute;
         left: 25px;
-        top: 38%;
+        top: 50%;
     }
 
     &__logo {
@@ -49,7 +48,6 @@
         }
 
         &__like {
-            @include like;
             position: relative;
 
             &::after {
@@ -126,6 +124,7 @@
         padding: 15px;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
 
         &:hover::after {
             transform: translateX(-59px);

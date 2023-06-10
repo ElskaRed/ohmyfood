@@ -19,6 +19,7 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     font-size: 1em;
     font-weight: 500;
     box-shadow: $button-shadow;
+    cursor: pointer;
 }
 
 @mixin like-hover {

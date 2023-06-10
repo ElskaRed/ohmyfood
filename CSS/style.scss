@@ -39,10 +39,6 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 
-    &__icone {
-        height: 16px;
-    }
-
     &__paragraphe{
         font-weight: 500;
     }
@@ -121,18 +117,6 @@ body {
     @include cards;
     height: 72px;
     font-weight: 500;
-
-    &__icone {
-        height: 20px;
-    }
-
-    &__icone2 {
-        height: 16px;
-    }
-
-    &__icone3 {
-        height: 18px;
-    }
 }
 
 .fonctionnement__numero {
