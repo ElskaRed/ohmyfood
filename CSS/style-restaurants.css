@@ -1,3 +1,13 @@
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .header-menu {
   position: relative;
   height: 63px;
@@ -32,6 +42,7 @@
   z-index: 2;
   padding-top: 40px;
   width: 100%;
+  overflow: hidden;
 }
 .partie-menu__top {
   display: flex;
@@ -67,6 +78,8 @@
 .partie-menu__section {
   margin-right: 13px;
   margin-left: 13px;
+  animation: slide 0.5s ease forwards;
+  opacity: 0;
 }
 .partie-menu__end {
   text-align: center;
@@ -103,6 +116,18 @@
   background: linear-gradient(#ff98e2, #a36fe1);
   transition: opacity 500ms;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.delay1 {
+  animation-delay: 200ms;
+}
+
+.delay2 {
+  animation-delay: 400ms;
+}
+
+.delay3 {
+  animation-delay: 600ms;
 }
 
 .menu-h2 {
@@ -152,7 +177,7 @@
   -o-object-fit: none;
      object-fit: none;
   background-repeat: no-repeat;
-  height: 70px;
+  height: 72px;
   position: absolute;
   right: -60px;
   width: 59px;
