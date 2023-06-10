@@ -249,6 +249,14 @@ footer .liste2 {
   font-weight: 400;
 }
 
-.footer-icone {
+.footer-icone1 {
+  margin-right: 16px;
+}
+
+.footer-icone2 {
   padding-right: 11px;
+}
+
+.contact-mail {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
