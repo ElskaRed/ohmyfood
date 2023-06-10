@@ -1,1 +1,90 @@
-/*# sourceMappingURL=loader.css.map */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgb(147, 86, 220) 0%, rgb(214, 108, 219) 83%, rgb(255, 121, 218) 100%);
+  border-radius: 50%;
+  margin: 40px;
+  opacity: 1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1 {
+  animation-name: circleAnimation;
+  animation-delay: 0s;
+}
+
+.circle2 {
+  animation-name: circleAnimation;
+  animation-delay: 250ms;
+}
+
+.circle3 {
+  animation-name: circleAnimation;
+  animation-delay: 500ms;
+}
+
+@keyframes circleAnimation {
+  0%, 50%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+}
+@keyframes innercircleAnimation {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.1);
+  }
+}
+.inner-circle {
+  width: 65%;
+  height: 65%;
+  background: radial-gradient(circle, rgb(255, 121, 218) 0%, rgb(187, 99, 219) 87%, rgb(147, 86, 220) 100%);
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.circle1 .inner-circle {
+  animation-name: innercircleAnimation;
+  animation-delay: 0s;
+}
+
+.circle2 .inner-circle {
+  animation-name: innercircleAnimation;
+  animation-delay: 250ms;
+}
+
+.circle3 .inner-circle {
+  animation-name: innercircleAnimation;
+  animation-delay: 500ms;
+}/*# sourceMappingURL=loader.css.map */
