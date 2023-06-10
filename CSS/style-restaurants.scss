@@ -50,10 +50,14 @@
 
         &__like {
             position: relative;
+            border: none;
+            background: transparent;
+            cursor: pointer;
 
             &::after {
                 content: "";
                 @include like-hover;
+                background: url(../images/coeur-rempli-png.png);
             }
 
             &:hover {

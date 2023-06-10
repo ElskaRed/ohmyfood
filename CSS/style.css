@@ -1,3 +1,13 @@
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 * {
   font-family: "roboto", sans-serif;
   font-size: 1em;
@@ -202,10 +212,26 @@ body {
   bottom: 10%;
   right: 5%;
   z-index: 1;
+  cursor: pointer;
 }
 .like__btn {
   border: none;
   background-color: transparent;
+}
+.like::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/coeur-rempli.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 1;
+}
+.like:hover::after {
+  opacity: 1;
 }
 
 .nouveau {
