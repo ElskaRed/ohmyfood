@@ -168,6 +168,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  white-space: nowrap;
 }
 .menu__cartes:hover::after {
   transform: translateX(-59px);

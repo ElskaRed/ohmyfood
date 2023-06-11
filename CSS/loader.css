@@ -8,13 +8,34 @@
     opacity: 1;
   }
 }
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes go {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: white;
-  display: none;
+  opacity: 1;
+  animation: go 0s linear 3s forwards;
 }
 
 .circle {
@@ -22,7 +43,7 @@
   height: 40px;
   background: radial-gradient(circle, rgb(147, 86, 220) 0%, rgb(214, 108, 219) 83%, rgb(255, 121, 218) 100%);
   border-radius: 50%;
-  margin: 40px;
+  margin: 30px;
   opacity: 1;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;

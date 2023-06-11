@@ -143,6 +143,7 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
+        white-space: nowrap;
 
         &:hover::after {
             transform: translateX(-59px);

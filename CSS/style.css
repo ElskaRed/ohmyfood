@@ -8,6 +8,14 @@
     opacity: 1;
   }
 }
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   font-family: "roboto", sans-serif;
   font-size: 1em;
@@ -18,6 +26,11 @@
 
 body {
   min-width: 320px;
+}
+
+.page-index {
+  animation: pop 0s linear 3s forwards;
+  opacity: 0;
 }
 
 .header-index {

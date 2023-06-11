@@ -95,3 +95,21 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
       opacity: 1;
     }
   }
+
+  @keyframes pop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes go {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }

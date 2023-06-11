@@ -4,9 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: white;
-    display: none;
+    opacity: 1;
+    animation: go 0s linear 3s forwards;
   }
   
   .circle {
@@ -14,7 +19,7 @@
     height: 40px;
     background: radial-gradient(circle, rgba(147,86,220,1) 0%, rgba(214,108,219,1) 83%, rgba(255,121,218,1) 100%);
     border-radius: 50%;
-    margin: 40px;
+    margin: 30px;
     opacity: 1;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -85,3 +90,4 @@
     animation-name: innercircleAnimation;
     animation-delay: 500ms;
   }
+
