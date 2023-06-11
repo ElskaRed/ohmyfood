@@ -70,10 +70,11 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../images/coeur-rempli-gris.svg);
+  background: url(../images/coeur-rempli-png.png);
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 1;
+  background-size: 22px 22px;
 }
 .partie-menu__top__like:hover::after {
   opacity: 1;

@@ -217,6 +217,7 @@ body {
 .like__btn {
   border: none;
   background-color: transparent;
+  position: relative;
 }
 .like::after {
   content: "";
@@ -231,6 +232,29 @@ body {
   z-index: 1;
 }
 .like:hover::after {
+  opacity: 1;
+}
+
+.like-icon {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
+.like-icon__btn {
+  border: none;
+  background-color: transparent;
+}
+.like-icon__btn__2 {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+}
+.like-icon:hover .boutooon {
   opacity: 1;
 }
 

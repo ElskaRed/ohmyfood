@@ -186,7 +186,9 @@ body {
     &__btn {
         border: none;
         background-color: transparent;
+        position: relative;
     }
+
 
     &::after {
         content: "";
@@ -195,6 +197,36 @@ body {
 
     &:hover {
         &::after {
+            opacity: 1;
+        }
+    }
+}
+
+
+.like-icon {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+    cursor: pointer;
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+
+        &__2 {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            border: none;
+            background-color: transparent;
+            opacity: 0;
+        }
+    }
+
+
+    &:hover {
+        .boutooon {
             opacity: 1;
         }
     }

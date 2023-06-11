@@ -53,10 +53,12 @@
             border: none;
             background: transparent;
             cursor: pointer;
+            
 
             &::after {
                 content: "";
                 @include like-hover-gris;
+                background-size: 22px 22px;
             }
 
             &:hover {
