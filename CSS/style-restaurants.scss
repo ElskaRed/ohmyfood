@@ -56,8 +56,7 @@
 
             &::after {
                 content: "";
-                @include like-hover;
-                background: url(../images/coeur-rempli-png.png);
+                @include like-hover-gris;
             }
 
             &:hover {

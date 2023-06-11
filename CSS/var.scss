@@ -33,6 +33,18 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     opacity: 0;
     z-index: 1;
 }
+@mixin like-hover-gris {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/coeur-rempli-gris.svg);
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 1;
+}
+
 
 @mixin button-hover {
     position: absolute;
