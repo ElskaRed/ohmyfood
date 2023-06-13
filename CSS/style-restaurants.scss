@@ -154,11 +154,11 @@
         }
 
         &::after {
-            content: url(../images/check.png);
-            background-color: $light-green;
-            object-fit: none;
-            background-repeat: no-repeat;
+            content: "\f058";
             height: 72px;
+            font-family: "Font Awesome 6 free"; 
+            color: white;
+            background-color: $light-green;
             position: absolute;
             right: -60px;
             width: 59px;

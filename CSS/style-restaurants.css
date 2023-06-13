@@ -193,12 +193,11 @@
   transform: translateX(-59px);
 }
 .menu__cartes::after {
-  content: url(../images/check.png);
-  background-color: #99e2d0;
-  -o-object-fit: none;
-     object-fit: none;
-  background-repeat: no-repeat;
+  content: "\f058";
   height: 72px;
+  font-family: "Font Awesome 6 free";
+  color: white;
+  background-color: #99e2d0;
   position: absolute;
   right: -60px;
   width: 59px;

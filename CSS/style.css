@@ -261,11 +261,11 @@ body {
   bottom: 10%;
   right: 5%;
   z-index: 1;
-  cursor: pointer;
 }
 .like-icon__btn {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .like-icon__btn__1 {
   position: relative;
