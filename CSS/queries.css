@@ -8,6 +8,22 @@
     opacity: 1;
   }
 }
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes go {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media only screen and (min-width: 768px) {
   .accueil__titre {
     font-size: 2.5em;

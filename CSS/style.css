@@ -16,6 +16,14 @@
     opacity: 1;
   }
 }
+@keyframes go {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 * {
   font-family: "roboto", sans-serif;
   font-size: 1em;
@@ -259,15 +267,22 @@ body {
   border: none;
   background-color: transparent;
 }
+.like-icon__btn__1 {
+  position: relative;
+  font-size: 25px;
+}
 .like-icon__btn__2 {
   position: absolute;
-  bottom: 10px;
+  bottom: 1px;
   left: 0;
-  border: none;
-  background-color: transparent;
   opacity: 0;
+  font-size: 25px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
-.like-icon:hover .boutooon {
+.like-icon:hover .bouton-2 {
   opacity: 1;
 }
 

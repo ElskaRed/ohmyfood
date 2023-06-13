@@ -219,20 +219,30 @@ body {
     &__btn {
         border: none;
         background-color: transparent;
+      
+
+        &__1 {
+              position: relative;
+              font-size: 25px;
+        }
+
 
         &__2 {
             position: absolute;
-            bottom: 10px;
+            bottom: 1px;
             left: 0;
-            border: none;
-            background-color: transparent;
             opacity: 0;
+            font-size: 25px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: $gradient;
         }
     }
 
 
     &:hover {
-        .boutooon {
+        .bouton-2 {
             opacity: 1;
         }
     }
