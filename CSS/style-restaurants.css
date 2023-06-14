@@ -78,22 +78,30 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  font-size: 25px;
 }
 .partie-menu__top__like::after {
-  content: "";
+  content: "\f004";
+  font-family: "Font Awesome 6 free";
+  font-weight: 700;
+  opacity: 0;
+  font-size: 25px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  background: url(../images/coeur-rempli-png.png);
-  background-repeat: no-repeat;
+  top: -1px;
+  right: 0;
   opacity: 0;
-  z-index: 1;
-  background-size: 22px 22px;
 }
 .partie-menu__top__like:hover::after {
   opacity: 1;
+}
+.partie-menu__top__like:hover .bouton-like {
+  opacity: 0;
 }
 .partie-menu__section {
   margin-right: 13px;

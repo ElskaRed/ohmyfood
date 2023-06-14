@@ -192,58 +192,40 @@ body {
     &__btn {
         border: none;
         background-color: transparent;
-        position: relative;
+        font-size: 25px;
+        
+        &__icon {
+            opacity: 1;
+        }
+
     }
 
-
     &::after {
-        content: "";
-        @include like-hover;
+        content: "\f004";
+        font-family: "Font Awesome 6 free"; 
+        font-weight: 700;
+        opacity: 0;
+        font-size: 25px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;
     }
 
     &:hover {
         &::after {
             opacity: 1;
         }
-    }
-}
 
-
-.like-icon {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    z-index: 1;
-
-    &__btn {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-
-        &__1 {
-              position: relative;
-              font-size: 25px;
-        }
-
-
-        &__2 {
-            position: absolute;
-            bottom: 1px;
-            left: 0;
+        .like__btn__icon {
             opacity: 0;
-            font-size: 25px;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: $gradient;
-        }
-    }
-
-
-    &:hover {
-        .bouton-2 {
-            opacity: 1;
-        }
+        }        
     }
 }
 

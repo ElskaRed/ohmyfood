@@ -53,17 +53,34 @@
             border: none;
             background: transparent;
             cursor: pointer;
+            font-size: 25px;
             
 
             &::after {
-                content: "";
-                @include like-hover-gris;
-                background-size: 22px 22px;
+                content: "\f004";
+                font-family: "Font Awesome 6 free"; 
+                font-weight: 700;
+                opacity: 0;
+                font-size: 25px;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: $gradient;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top: -1px;
+                right: 0;
+                opacity: 0;
             }
 
             &:hover {
                 &::after {
                     opacity: 1;
+                }
+
+                .bouton-like {
+                    opacity: 0;
                 }
             }
         }
@@ -102,6 +119,7 @@
     }
 
 }
+
 
 .delay1 {
     animation-delay: 200ms;

@@ -96,7 +96,7 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     }
   }
 
-  @keyframes pop {
+@keyframes pop {
     0% {
         opacity: 0;
     }
@@ -105,7 +105,7 @@ $card-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     }
   }
 
-  @keyframes go {
+@keyframes go {
     0% {
         opacity: 1;
     }
