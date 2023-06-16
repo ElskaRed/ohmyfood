@@ -153,8 +153,9 @@
 
     &__cartes {
         @include cards;
-        @include flexbox(column);
-        justify-content: center;
+        @include flexbox(row);
+        justify-content: space-between;
+        align-items: center;
         gap: 5px;
         height: 70px;
         padding: 15px;
@@ -191,8 +192,14 @@
         }
 
         &__texte {
-            @include flexbox(row);
-            justify-content: space-between;
+            @include flexbox(column);
+            gap: 8px;
+        }
+
+        &__prix {
+            display: flex;
+            height: 45px;
+            align-items: flex-end;
         }
     }
 }

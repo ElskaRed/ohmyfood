@@ -184,8 +184,9 @@
   background-color: white;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 5px;
   height: 70px;
   padding: 15px;
@@ -221,8 +222,13 @@
 }
 .menu__cartes__texte {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+.menu__cartes__prix {
+  display: flex;
+  height: 45px;
+  align-items: flex-end;
 }
 
 .prix {
