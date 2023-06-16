@@ -198,7 +198,7 @@
   transform: translateX(-59px);
 }
 .menu__cartes:hover .menu__cartes__prix {
-  width: 99px;
+  width: 129px;
 }
 .menu__cartes::after {
   content: "\f058";
@@ -230,6 +230,8 @@
   gap: 8px;
   text-overflow: hidden;
   white-space: nowrap;
+  flex-grow: 1;
+  width: 100%;
 }
 .menu__cartes__prix {
   display: flex;
@@ -238,7 +240,7 @@
   justify-content: flex-start;
   padding-left: 10px;
   padding-bottom: 10px;
-  width: 40px;
+  width: 30px;
   transition: width 400ms ease;
 }
 

@@ -168,7 +168,7 @@
         }
 
         &:hover &__prix {
-            width: 99px;
+            width: 129px;
         }
 
         &::after {
@@ -200,6 +200,8 @@
             gap: 8px;
             text-overflow: hidden;
             white-space: nowrap;
+            flex-grow: 1;
+            width: 100%;
         }
 
         &__prix {
@@ -209,7 +211,7 @@
             justify-content: flex-start;
             padding-left: 10px;
             padding-bottom: 10px;
-            width: 40px;
+            width: 30px;
             transition: width 400ms ease;
         }
     }
