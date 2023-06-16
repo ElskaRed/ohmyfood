@@ -192,7 +192,6 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  white-space: nowrap;
 }
 .menu__cartes:hover::after {
   transform: translateX(-59px);
@@ -204,6 +203,7 @@
   content: "\f058";
   height: 72px;
   font-family: "Font Awesome 6 free";
+  font-weight: 900;
   color: white;
   background-color: #99e2d0;
   position: absolute;
