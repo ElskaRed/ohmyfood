@@ -115,6 +115,14 @@ body {
     }
 }
 
+.fa-mobile-screen-button, .fa-list-ul {
+    color: #7e7e7e;
+}
+
+.fa-store {
+    color: $purple;
+}
+
 .contenu {
     @include flexbox(row);
     align-items: center;
@@ -280,6 +288,6 @@ footer {
     padding-right: 11px;
 }
 
-.contact-mail {
+.contact-mail, .fa-utensils, .fa-handshake-angle {
     color: white;
 }
