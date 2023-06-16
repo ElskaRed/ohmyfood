@@ -197,8 +197,8 @@
 .menu__cartes:hover::after {
   transform: translateX(-59px);
 }
-.menu__cartes:hover .prix {
-  transform: translateX(-59px);
+.menu__cartes:hover .menu__cartes__prix {
+  width: 99px;
 }
 .menu__cartes::after {
   content: "\f058";
@@ -219,27 +219,40 @@
   font-family: "roboto";
   font-size: 1.1em;
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__cartes__texte {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   gap: 8px;
+  text-overflow: hidden;
+  white-space: nowrap;
 }
 .menu__cartes__prix {
   display: flex;
-  height: 45px;
+  height: 70px;
   align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 40px;
+  transition: width 400ms ease;
 }
 
 .prix {
   font-family: "roboto";
   font-size: 0.9em;
   font-weight: 700;
-  transition: transform 400ms ease;
 }
 
 .menu-card-text {
   font-family: "roboto";
   font-size: 0.9;
   font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }/*# sourceMappingURL=style-restaurants.css.map */

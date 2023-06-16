@@ -167,8 +167,8 @@
             transform: translateX(-59px);
         }
 
-        &:hover .prix {
-            transform: translateX(-59px);
+        &:hover &__prix {
+            width: 99px;
         }
 
         &::after {
@@ -189,26 +189,39 @@
 
         &__h3 {
             @include font('roboto', 1.1em, 500);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         &__texte {
             @include flexbox(column);
+            overflow: hidden;
             gap: 8px;
+            text-overflow: hidden;
+            white-space: nowrap;
         }
 
         &__prix {
             display: flex;
-            height: 45px;
+            height: 70px;
             align-items: flex-end;
+            justify-content: flex-start;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 40px;
+            transition: width 400ms ease;
         }
     }
 }
 
 .prix {
     @include font('roboto', 0.9em, 700);
-    transition: transform 400ms ease;
 }
 
 .menu-card-text {
     @include font('roboto', 0.9, 300);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
