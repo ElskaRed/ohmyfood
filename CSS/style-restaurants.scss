@@ -168,7 +168,11 @@
         }
 
         &:hover &__prix {
-            width: 129px;
+            width: 8rem;
+        }
+
+        &:hover .prix {
+            transform: translateX(-59px);
         }
 
         &::after {
@@ -208,21 +212,23 @@
             display: flex;
             height: 70px;
             align-items: flex-end;
-            justify-content: flex-start;
+            justify-content: flex-end;
             padding-left: 10px;
             padding-bottom: 10px;
-            width: 30px;
-            transition: width 400ms ease;
+            width: 2rem;
+            transition-property: width;
+            transition-delay: 100ms;
         }
     }
 }
 
 .prix {
     @include font('roboto', 0.9em, 700);
+    transition: transform 400ms ease;
 }
 
 .menu-card-text {
-    @include font('roboto', 0.9, 300);
+    @include font('roboto', 0.9em, 300);
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;

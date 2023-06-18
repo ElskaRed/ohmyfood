@@ -1,26 +1,34 @@
 @keyframes slide {
-  0% {
+  from {
     opacity: 0;
     transform: translateX(100%);
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes pop {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
 @keyframes go {
-  0% {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
+  }
+}
+@keyframes glide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-59px);
   }
 }/*# sourceMappingURL=var.css.map */
