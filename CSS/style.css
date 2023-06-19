@@ -9,11 +9,14 @@
   }
 }
 @keyframes pop {
-  from {
-    opacity: 0;
+  0% {
+    overflow: hidden;
   }
-  to {
-    opacity: 1;
+  98% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
   }
 }
 @keyframes go {
@@ -42,11 +45,11 @@
 
 body {
   min-width: 320px;
+  height: 100vh;
 }
 
 .page-index {
-  animation: pop 0s linear 3s forwards;
-  opacity: 0;
+  z-index: 0;
 }
 
 .header-index {

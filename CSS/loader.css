@@ -1,41 +1,53 @@
 @keyframes slide {
-  0% {
+  from {
     opacity: 0;
     transform: translateX(100%);
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes pop {
   0% {
-    opacity: 0;
+    overflow: hidden;
+  }
+  98% {
+    overflow: hidden;
   }
   100% {
-    opacity: 1;
+    overflow: visible;
   }
 }
 @keyframes go {
-  0% {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
+  }
+}
+@keyframes glide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-59px);
   }
 }
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  height: 100vh;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
-  opacity: 1;
+  background-color: #f7f7f7;
   animation: go 0s linear 3s forwards;
+  z-index: 100;
 }
 
 .circle {
