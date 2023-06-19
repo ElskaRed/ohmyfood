@@ -8,23 +8,14 @@
     opacity: 1;
   }
 }
-@keyframes pop {
-  0% {
-    overflow: hidden;
-  }
-  98% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: visible;
-  }
-}
 @keyframes go {
   from {
     opacity: 1;
+    width: 100%;
   }
   to {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes glide {
@@ -41,6 +32,7 @@
   align-items: center;
   position: fixed;
   height: 100vh;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;

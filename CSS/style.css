@@ -8,17 +8,6 @@
     opacity: 1;
   }
 }
-@keyframes pop {
-  0% {
-    overflow: hidden;
-  }
-  98% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: visible;
-  }
-}
 @keyframes go {
   from {
     opacity: 1;
