@@ -9,11 +9,13 @@
   }
 }
 @keyframes go {
-  from {
+  0% {
     opacity: 1;
+    width: 100%;
   }
-  to {
+  100% {
     opacity: 0;
+    width: 0%;
   }
 }
 @keyframes glide {

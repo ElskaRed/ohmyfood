@@ -202,7 +202,7 @@
             @include flexbox(column);
             overflow: hidden;
             gap: 8px;
-            text-overflow: hidden;
+            text-overflow: ellipsis;
             white-space: nowrap;
             flex-grow: 1;
             width: 100%;
